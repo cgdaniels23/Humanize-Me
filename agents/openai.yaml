@@ -1,0 +1,7 @@
+interface:
+  display_name: "Humanize Me"
+  short_description: "Make AI-written text sound naturally human"
+  default_prompt: "Use $humanize-me to rewrite this so it sounds natural, specific, and like me."
+
+policy:
+  allow_implicit_invocation: true
