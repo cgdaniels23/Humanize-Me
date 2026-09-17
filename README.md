@@ -48,7 +48,9 @@ Use $humanize-me to turn these rough thoughts into something my audience will un
 Use $humanize-me to write this from my perspective, but make it accessible to people who don't already know me.
 ```
 
-The skill can also activate automatically for requests such as “say this better,” “help me explain what I mean,” “make this sound like me,” or “clean this up without polishing me out of it.”
+The skill should activate automatically as soon as someone asks to **“rewrite this,” “reword this,” “revise this,” “clean this up,”** or **“say this better”** when the material originated with them. They should not have to wait for a generic rewrite to lose their voice and then ask AI to put it back.
+
+If the source is AI-generated and the user only wants robotic patterns removed, that request belongs to a traditional AI-text humanizer instead.
 
 ## Structure
 
