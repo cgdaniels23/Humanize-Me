@@ -1,7 +1,7 @@
 interface:
   display_name: "Humanize Me"
-  short_description: "Make AI-written text sound naturally human"
-  default_prompt: "Use $humanize-me to rewrite this so it sounds natural, specific, and like me."
+  short_description: "Translate human intent without losing the voice"
+  default_prompt: "Use $humanize-me to understand what I mean and express it clearly without losing my voice."
 
 policy:
   allow_implicit_invocation: true
