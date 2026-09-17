@@ -1,62 +1,64 @@
-# Humanization Signals
+# Intent and Voice Translation
 
-Read this reference for an audit, a difficult voice match, or a rewrite that still feels artificial after the first pass.
+Read this reference when the user's meaning is difficult to interpret, the audience requires substantial adaptation, or a rewrite still feels unlike the person who supplied the idea.
 
-## Diagnose at four levels
+## Routing check
 
-### 1. Content
+Before building a meaning map, identify the source:
 
-Look for statements that could belong to anyone: vague benefits, unsupported confidence, generic emotion, or conclusions with no concrete reason behind them. Make the thought more specific using only information the user supplied. If the missing detail matters, ask rather than invent.
+- If it began as the user's own thoughts, speech, notes, fragments, or draft, continue with Humanize Me.
+- If it was generated primarily by AI and the intent is already correct, route stylistic cleanup to an AI-text humanizer.
+- If AI-generated wording misrepresents or flattens the user's original point, continue with Humanize Me to recover intent.
 
-### 2. Structure
+The deciding question is not “Does this sound robotic?” It is “Do we first need to understand what this person actually means?”
 
-AI drafts often move too neatly: setup, three balanced points, summary. Collapse unnecessary framing, vary paragraph size, and let the most important thought lead. Preserve rigid structure when the format requires it, such as a resume, policy, technical procedure, or application form.
+## Build a meaning map
 
-### 3. Sentences
+Before choosing better words, identify:
 
-Check for repeated sentence openings, uniform length, excessive qualifiers, noun-heavy phrasing, and predictable transitions. Favor active verbs and natural syntax, but do not force every sentence into the same “clear and concise” pattern.
+- **Core point:** What does the user most need the audience to understand?
+- **Outcome:** What should the audience think, feel, decide, or do next?
+- **Facts:** Which names, dates, claims, examples, and constraints must survive unchanged?
+- **Emotional position:** Is the user excited, frustrated, cautious, playful, vulnerable, firm, or something more specific?
+- **Relationship:** How does the user relate to the audience—friend, customer, recruiter, colleague, stranger, critic, or community member?
+- **Voice markers:** Which vocabulary, rhythms, jokes, fragments, or turns of phrase make the communication recognizably theirs?
+- **Risk:** What could be misunderstood if the message is cleaned up too aggressively or interpreted too literally?
 
-### 4. Voice
+Do not display this map unless the user requests analysis.
 
-Compare the draft with the user's samples. Note recurring vocabulary, humor, bluntness, warmth, punctuation, fragments, and how directly they make requests. Reproduce patterns, not mistakes. A voice match should feel recognizable without becoming an imitation or parody.
+## Distinguish noise from signal
 
-## Editing ladder
+Surface features such as typos, missing punctuation, repeated words, voice-dictation errors, or disordered sequencing may be noise. Directness, humor, intensity, unusual phrasing, and intentional repetition may be signal.
 
-Use the least aggressive level that solves the problem:
+Correct the noise. Preserve or refine the signal.
 
-1. **Clean:** Remove obvious filler and robotic transitions.
-2. **Naturalize:** Improve rhythm, specificity, and conversational flow.
-3. **Voice-match:** Reshape wording and cadence using supplied samples.
-4. **Rebuild:** Reorganize the draft while preserving every material fact and intent.
+When uncertain, ask: would removing this feature make the message easier to understand, or merely make the person sound more generic?
 
-## Useful contrasts
+## Translate for the audience
 
-### Generic enthusiasm
+The final language does not need to reproduce the user's raw input word for word. It needs to carry the same meaning, personality, and stakes into a form the audience can receive.
 
-Before: “I am incredibly excited about the opportunity to leverage my extensive experience and drive meaningful impact.”
+For a close friend, familiarity and shorthand may be essential. For a recruiter, the same idea may need more structure and evidence. For a public article, it may need broader context and fewer assumptions. Change the delivery, not the person's underlying position.
 
-After: “This role lines up closely with the work I've been doing, and I'd love to bring that experience to the team.”
+## Intervention levels
 
-### Inflated positioning
+Use the least aggressive level that works:
 
-Before: “We deliver innovative, best-in-class solutions designed to unlock transformative growth.”
+1. **Clean:** Correct errors that interfere with reading.
+2. **Clarify:** Make the intended meaning explicit while preserving structure.
+3. **Translate:** Reorganize the thought for a particular audience or purpose.
+4. **Expand:** Develop the user's idea into complete communication using only supported meaning and context.
 
-After: “We help small teams find what's slowing growth, fix it, and build a plan they can actually run.”
+## Fidelity failures
 
-### Mechanical symmetry
+Revise again if the output:
 
-Before: “The strategy improved awareness, increased engagement, and strengthened conversion.”
+- sounds polished but changes what the user is actually asking for
+- replaces a strong emotional position with generic professionalism
+- invents confidence, enthusiasm, gratitude, or warmth the user did not express
+- removes every distinctive phrase in the name of clarity
+- copies the user's errors rather than their voice
+- assumes a cultural, demographic, or professional stereotype
+- becomes so concise that the audience loses necessary context
 
-After: “The campaign reached more of the right people. Engagement climbed, and more of that attention turned into sales.”
-
-These examples demonstrate the direction of editing. Do not reuse their wording unless it fits the user's facts and voice.
-
-## Audit format
-
-When the user requests an audit, keep it compact:
-
-- Quote or identify the strongest signal.
-- Explain why it feels artificial in one sentence.
-- Give a specific replacement or revised passage.
-
-Prioritize the few changes with the greatest effect. Do not turn the audit into a generic writing lesson.
+The target is not a technically perfect sentence. It is successful communication that the user still recognizes as their own.
