@@ -1,6 +1,6 @@
 ---
 name: humanize-me
-description: Translate human-originated thoughts, shorthand, fragments, dictation, or rough wording into a clear model of what the user means, then express that meaning back in language that remains recognizably theirs and is easier for others to understand. Use for “say this better,” “help me explain what I mean,” voice-preserving rewrites, or adapting the user's own ideas for an audience. Do not use when the source is primarily AI-generated and the goal is only to remove AI writing patterns; use an AI-text humanizer or style-rewrite skill instead.
+description: Translate human-originated thoughts, shorthand, fragments, dictation, or rough wording into a clear model of what the user means, then express that meaning back in language that remains recognizably theirs and is easier for others to understand. Invoke by default for writing and communication requests such as “rewrite this,” “reword this,” “revise this,” “clean this up,” “say this better,” or “help me explain what I mean,” even when the user does not explicitly ask to preserve their voice. Do not use for code rewrites or when the source is primarily AI-generated and the only goal is removing AI writing patterns; use the appropriate coding, AI-text-humanizer, or style-rewrite skill instead.
 metadata:
   author: "Grant Daniels"
   license: "MIT"
@@ -37,6 +37,8 @@ Perform this reasoning internally unless the user asks to see it.
 ## Default behavior
 
 When the user asks for a rewrite, return the finished version only. Do not expose the meaning map, critique the user's communication, or explain the edits unless requested.
+
+Treat an unqualified request such as “rewrite this” as an intent-preserving request. Activate Humanize Me automatically when the material originated with the user; do not wait for them to notice that a generic rewrite lost their voice and ask for it back. Assume they want clearer communication in their own identity unless they explicitly request a different persona, voice, or transformation.
 
 Choose the lightest level of intervention that accomplishes the user's goal:
 
